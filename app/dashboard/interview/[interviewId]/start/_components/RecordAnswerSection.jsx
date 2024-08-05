@@ -73,8 +73,13 @@ const RecordAnswerSection = ({ mockInterviewQuestions, activeQuestionIndex, inte
             toast('Answer recoreded Successfully')
             setUserAnswer('')
             setResults([])
-        }else{
+        }else if(userAnswer?.length>0){
+            toast('Please record your answer')
+        }
+        else{
+
             toast('Something went wrong. Please try again')
+
         }
         
         setLoading(false)
