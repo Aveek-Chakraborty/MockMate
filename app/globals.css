@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.cl-internal-phfxlr{
-  display: none;  
-}
+
 
 @layer base {
   :root {
